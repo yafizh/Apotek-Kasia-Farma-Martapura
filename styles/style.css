@@ -1,0 +1,108 @@
+#navbarSupportedContent {
+	visibility: hidden;
+}
+
+#sidebar {
+	display: block;
+}
+
+#flex {
+	flex-direction: row;
+}
+
+#flex .list-group-item:hover{
+	background-color: #007bff;
+	cursor: pointer;
+}
+
+.dropdown-item {
+	cursor: pointer;
+}
+
+#eye {
+	cursor: pointer;
+}
+
+.table-container::-webkit-scrollbar {
+	display: none;
+}
+
+.table-container {
+	overflow: auto;
+	scrollbar-width: none; 
+	height: 100%;
+}
+
+.table-container th {
+	position: sticky;
+	top: -1px;
+	box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
+	vertical-align: middle!important;
+}
+
+table td {
+	vertical-align: middle!important;
+}
+
+input {
+	text-transform: capitalize;
+}
+body {
+	background-color: #f3f3f3; 
+	font-family: 'Noto Serif', serif;
+}
+
+
+/* This style to make modal in a div */
+.content,
+.content2 {
+    overflow: hidden; /* Default value is visible */
+    position: relative; /* Default value is visible */
+}
+
+.modal-backdrop {
+    position: absolute !important; /* Default value is fixed */
+    width: 100%; /* Default value is auto */
+    height: 100%; /* Default value is auto */
+}
+
+.table-container th:not(.btn-dark) {
+	background-color: white;
+}
+
+.table-container th[class=btn-dark]:hover {
+	cursor: pointer;
+}
+
+#income,
+#spending {
+	font-weight: bold;
+	cursor: pointer;
+}
+
+#income:hover,
+#spending:hover {
+	color: black;
+}
+
+.can-detail tbody tr {
+	cursor: pointer;
+}
+
+.can-detail tbody tr:hover {
+	background-color: #007BFF;
+}
+
+@media (max-width: 576px) {
+	#navbarSupportedContent {
+		visibility: visible;
+	}
+
+	#sidebar {
+		display: none;
+	}
+
+	#flex {
+		flex-direction: column;
+	}	
+}
